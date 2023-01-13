@@ -6,13 +6,27 @@ const allSections = document.querySelector('.main-content');
 
 function pageTransitions(){
     //button click active class
-    for(let i = 0; i < sectBtn.length; i++){
-        sectBtn[i].addEventListener('click', function() {
-            let currentBtn = document.querySelectorAll('.active-btn');
-            currentBtn[0].className = currentBtn[0].className.replace('active-btn', '')
-            this.className += 'active-btn'
-        })
+    // for(let i = 0; i < sectBtn.length; i++){
+    //     sectBtn[i].addEventListener('click', function() {
+    //         let currentBtn = document.querySelectorAll('.active-btn');
+            
+    //         currentBtn[0].className = currentBtn[0].className.replace('active-btn', '')
+    //         this.className += 'active-btn'
+    //     })
+    // }
+
+    for (var i = 0; i < sectBtn.length; i++) {
+    sectBtn[i].addEventListener("click", function() {
+        // Change the color of the clicked button
+
+        for (var j = 0; j < sectBtn.length; j++) {
+      sectBtn[j].classList.remove('active-btn');
     }
+    // Add the 'active' class to the clicked button
+    this.classList.add('active-btn');
+  
+    });
+}
 
     //sections active 
     allSections.addEventListener('click', (e) =>{
