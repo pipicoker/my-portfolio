@@ -337,7 +337,14 @@ section{
                     }
                 }
             }
+
+            
         }
+                .stack {
+                    position: absolute;
+                    display: flex;
+                    list-style: none;
+                }
     }
 
 }
