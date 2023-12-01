@@ -342,10 +342,25 @@ section {
 }
 
 .skill-logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 6rem;
+}
+.skill-logo .tools-languages {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 6rem;
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
 }
 
 .ic {
@@ -531,6 +546,11 @@ section {
   }
   .portfolios {
     grid-template-columns: 1fr !important;
+  }
+  .skill-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4;
   }
   .contact-content-con {
     flex-direction: column;

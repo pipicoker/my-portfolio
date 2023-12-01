@@ -8,6 +8,15 @@
         grid-template-columns: 1fr !important;
     }
 
+    .skill-logo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4;
+        
+    
+        
+    }
+
     .contact-content-con{
         flex-direction: column;
         .right-contact{
