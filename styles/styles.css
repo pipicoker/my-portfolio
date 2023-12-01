@@ -232,7 +232,7 @@ section {
 
 .portfolios {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
@@ -316,11 +316,6 @@ section {
 }
 .portfolios .portfolio-item .hover-items .icons .live:hover p {
   color: var(--color-primary);
-}
-.portfolios .portfolio-item .stack {
-  position: absolute;
-  display: flex;
-  list-style: none;
 }
 
 .portfolio-item:hover .hover-items {
